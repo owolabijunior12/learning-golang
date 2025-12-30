@@ -172,20 +172,20 @@ func courseTwo() {
 	// ============ 1. BASIC FUNCTIONS ============
 	fmt.Println("1. BASIC FUNCTIONS")
 	fmt.Println("---")
-	result := add(5, 3)
-	fmt.Printf("add(5, 3) = %v\n\n", result)
+	result := addBasics(5, 3)
+	fmt.Printf("addBasics(5, 3) = %v\n\n", result)
 
 	// ============ 2. MULTIPLE RETURN VALUES ============
 	fmt.Println("2. MULTIPLE RETURN VALUES")
 	fmt.Println("---")
-	quotient, err := divide(10, 2)
+	quotient, err := divideBasics(10, 2)
 	if err != nil {
 		fmt.Printf("Error: %v\n", err)
 	} else {
 		fmt.Printf("10 / 2 = %v\n", quotient)
 	}
 
-	quotient, err = divide(10, 0)
+	quotient, err = divideBasics(10, 0)
 	if err != nil {
 		fmt.Printf("Error: %v\n", err)
 	}
